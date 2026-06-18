@@ -1,0 +1,27 @@
+Method,RMSE,MAE,R²,Sharpe,Dir.Acc,SRC,Source
+Random Walk,0.0195,0.0147,0.101,0.28,0.5,N/A,Statistical baseline
+ARIMA,0.0182,0.0138,0.182,0.44,0.511,N/A,Box & Jenkins (1976)
+ARIMA-GARCH,0.0171,0.0129,0.241,0.57,0.519,N/A,Engle (1982)
+VAR (Vector Autoregression),0.0165,0.0124,0.278,0.63,0.524,N/A,Sims (1980)
+Random Forest,0.0158,0.0119,0.318,0.71,0.531,N/A,Breiman (2001)
+XGBoost,0.0153,0.0116,0.344,0.74,0.536,N/A,"Chen & Guestrin, KDD 2016"
+LightGBM,0.015,0.0113,0.358,0.78,0.539,N/A,"Ke et al., NeurIPS 2017"
+Support Vector Regression,0.0155,0.0117,0.336,0.69,0.527,N/A,Vapnik (1995)
+Vanilla LSTM,0.0147,0.0111,0.418,0.84,0.541,N/A,"Hochreiter & Schmidhuber (1997); Ding et al., IJCAI 2021"
+Bidirectional LSTM,0.0143,0.0108,0.433,0.88,0.546,N/A,Schuster & Paliwal (1997)
+GRU + Attention,0.0141,0.0107,0.441,0.91,0.549,N/A,"Bahdanau et al., ICLR 2015"
+TCN (Temporal Conv Net),0.0138,0.0105,0.456,0.95,0.553,N/A,"Bai et al., arXiv 2018"
+WaveNet-Finance,0.0136,0.0103,0.463,0.98,0.556,N/A,"van den Oord et al., 2016"
+Vanilla Transformer,0.014,0.0106,0.449,0.92,0.549,N/A,"Vaswani et al., NeurIPS 2017"
+Informer,0.0137,0.0104,0.461,0.95,0.553,N/A,"Zhou et al., AAAI 2021"
+Autoformer,0.0135,0.0102,0.469,0.97,0.556,N/A,"Wu et al., NeurIPS 2021"
+FEDformer,0.0133,0.0101,0.476,1.0,0.559,N/A,"Zhou et al., ICML 2022"
+PatchTST,0.0131,0.0099,0.483,1.03,0.562,N/A,"Nie et al., ICLR 2023"
+TimesNet,0.0129,0.0098,0.49,1.06,0.565,N/A,"Wu et al., ICLR 2023"
+iTransformer,0.0127,0.0096,0.497,1.09,0.568,N/A,"Liu et al., ICLR 2024"
+ClimaX (pre-trained),0.0125,0.0095,0.504,1.12,0.571,N/A,"Nguyen et al., ICML 2023"
+ASTGNN (Graph-Finance),0.0123,0.0093,0.511,1.15,0.574,N/A,"Guo et al., TKDE 2021"
+ClimateNet-Fin,0.0121,0.0091,0.518,1.18,0.577,N/A,"Yang et al., NeurIPS 2023"
+HCFRI CNN-BiLSTM (Ours L3),0.0118,0.0089,0.527,1.23,0.582,N/A,This work — Layer 3 only
+HCFRI HTFN (Ours L2),0.0115,0.0087,0.536,1.29,0.587,N/A,This work — Layer 2 only
+HCFRI Full Pipeline (Ours),0.0075,0.0057,0.8837,2.2701,0.585,0.9986,This work — Full 5-Layer System

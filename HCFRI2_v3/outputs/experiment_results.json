@@ -1,0 +1,49 @@
+{
+  "layer5_metrics": {
+    "RMSE": 0.007518,
+    "MAE": 0.005683,
+    "R_squared": 0.883703,
+    "Directional_Accuracy": 0.5849,
+    "Sharpe_Ratio": 2.2701,
+    "Information_Coefficient": 0.9666,
+    "Max_Drawdown": -0.1359,
+    "Calmar_Ratio": 1.9878,
+    "Forecast_Scale_Ratio": 0.0969,
+    "Calibration_ECE": 0.0823,
+    "Systemic_Risk_Capture": 0.9986,
+    "OOD_RMSE": 0.007525,
+    "OOD_R_squared": 0.882821,
+    "n_val": 542,
+    "n_ood": 541
+  },
+  "stress_tests": {
+    "Orderly_Net_Zero_2050": {
+      "risk_delta": 0.001404,
+      "risk_score": 0.5537,
+      "description": "+1.5\u00b0C by 2100"
+    },
+    "Disorderly_Delayed_Trans": {
+      "risk_delta": 0.002334,
+      "risk_score": 0.6495,
+      "description": "+2.0\u00b0C, late action"
+    },
+    "Hot_House_World_4C": {
+      "risk_delta": 0.003337,
+      "risk_score": 0.7694,
+      "description": "+4.0\u00b0C, no action"
+    },
+    "Current_Policies_Ref": {
+      "risk_delta": 0.00232,
+      "risk_score": 0.6014,
+      "description": "+2.5\u00b0C baseline"
+    },
+    "Below_2C_Scenario": {
+      "risk_delta": 0.00188,
+      "risk_score": 0.5679,
+      "description": "+1.8\u00b0C moderate"
+    }
+  },
+  "sota_best_rmse": 0.0075,
+  "sota_our_rmse": 0.007518,
+  "timestamp": "2026-05-15T01:36:11.692861"
+}
